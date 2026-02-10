@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>I'm Sorry ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 40px 30px;
+      border-radius: 20px;
+      max-width: 500px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .heart {
+      font-size: 2.5em;
+      animation: pulse 1.5s infinite;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #fff;
+      color: #ff4f7a;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.05em;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>I'm Sorry, My Love</h1>
+
+    <p>
+      I know I hurt you, and I hate that I made you feel betrayed.
+      I want you to know the truth — I was not cheating on you.
+    </p>
+
+    <p>
+      When you saw my chat with my ex, it looked wrong, and I understand why.
+      But my intention was never to go back or hide anything from you.
+      I was trying to **close that chapter and get rid of the past**, not open it again.
+    </p>
+
+    <p>
+      You mean more to me than any conversation, any history, or any mistake.
+      I should have handled it better — and I'm deeply sorry that I didn't.
+    </p>
+
+    <p>
+      Please believe me when I say:  
+      **I choose you. Always.**
+    </p>
+
+    <button onclick="showMessage()">Tap if you still believe in us 💕</button>
+
+    <div id="extra" class="hidden">
+      <p>
+        I'm ready to do whatever it takes to rebuild your trust —
+        complete honesty, patience, and proving with actions that
+        my heart is yours.
+      </p>
+      <p>
+        I love you. I'm sorry. And I hope you can forgive me.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("extra").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
